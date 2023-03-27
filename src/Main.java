@@ -2,6 +2,11 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
+        task4();
+        task5();
+        task6();
+        task7();
                  }
 
     public static void task1 () {
@@ -16,12 +21,56 @@ public class Main {
 
     public static void task2 () {
         System.out.println("Задача 2");
-        int temperature = 10;
-        if (temperature <= 5) {
+        int temperature = -1;
+        if (temperature < 5) {
             System.out.println("На улице " + temperature + " градусов, нужно надеть шапку.");
         } else {
             System.out.println("На улице " + temperature + " градусов, можно идти без шапки.");
         }
+    }
+
+    public static void task3 () {
+        System.out.println("Задача 3");
+        int speed = 61;
+        if (speed > 60) {
+            System.out.println("Если скорость " + speed + " км/ч, то придется заплатить штраф.");
+        } else {
+            System.out.println("Если скорость " + speed + " км/ч, то можно ездить спокойно.");
+        }
+    }
+
+    public static void task4 () {
+        System.out.println("Задача 4");
+        int age = 33;
+        boolean goToKindergarten = age >= 2 && age <= 6;
+        boolean goToSchool = age >= 7 && age <18;
+        boolean goToUnevrcity = age > 18 && age < 24;
+        boolean goToWork = age > 24;
+        if (goToKindergarten) {
+            System.out.println("Если возраст человек равен " + age + ", то ему нужно ходить в садик.");
+        }
+        if (goToSchool) {
+            System.out.println("Если возраст человек равен " + age + ", то ему нужно ходить в школу.");
+        }
+        if (goToUnevrcity) {
+            System.out.println("Если возраст человек равен " + age + ", то ему нужно ходить в университет.");
+        }
+        if (goToWork) {
+            System.out.println("Если возраст человек равен " + age + ", то ему нужно ходить на работу.");
+        }
+
+    }
+
+    public static void task5 () {
+        System.out.println("Задача 5");
+    }
+
+    public static void task6 () {
+        System.out.println("Задача 6");
+    }
+
+    public static void task7 () {
+        System.out.println("Задача 7");
     }
 }
 
