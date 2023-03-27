@@ -63,6 +63,19 @@ public class Main {
 
     public static void task5 () {
         System.out.println("Задача 5");
+        int age = 2;
+        boolean canNotRide = age < 5;
+        boolean rideWithAdults = age > 5 && age < 14;
+        boolean rideAlone = age > 14;
+        if (canNotRide) {
+            System.out.println("Если возраст ребенка равен " + age + ", то ему нельзя кататься на аттракционе.");
+        }
+        if (rideWithAdults) {
+            System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься в сопровождении взрослого.");
+        }
+        if (rideAlone) {
+            System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься одному без взрослого.");
+        }
     }
 
     public static void task6 () {
