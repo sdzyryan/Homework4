@@ -42,23 +42,15 @@ public class Main {
     public static void task4 () {
         System.out.println("Задача 4");
         int age = 33;
-        boolean goToKindergarten = age >= 2 && age <= 6;
-        boolean goToSchool = age >= 7 && age <18;
-        boolean goToUnevrcity = age > 18 && age < 24;
-        boolean goToWork = age > 24;
-        if (goToKindergarten) {
+        if (age >= 2 && age <= 6); {
             System.out.println("Если возраст человек равен " + age + ", то ему нужно ходить в садик.");
-        }
-        if (goToSchool) {
+        } else if (age >= 7 && age <18) {
             System.out.println("Если возраст человек равен " + age + ", то ему нужно ходить в школу.");
-        }
-        if (goToUnevrcity) {
+        } else if (age > 18 && age < 24) {
             System.out.println("Если возраст человек равен " + age + ", то ему нужно ходить в университет.");
-        }
-        if (goToWork) {
+        } else (age >= 24) {
             System.out.println("Если возраст человек равен " + age + ", то ему нужно ходить на работу.");
         }
-
     }
 
     public static void task5 () {
