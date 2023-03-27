@@ -16,6 +16,12 @@ public class Main {
 
     public static void task2 () {
         System.out.println("Задача 2");
+        int temperature = 10;
+        if (temperature <= 5) {
+            System.out.println("На улице " + temperature + " градусов, нужно надеть шапку.");
+        } else {
+            System.out.println("На улице " + temperature + " градусов, можно идти без шапки.");
+        }
     }
 }
 
