@@ -93,6 +93,18 @@ public class Main {
 
     public static void task7 () {
         System.out.println("Задача 7");
+        int one = 5;
+        int two = 9;
+        int three = 1;
+        if (one>two && one>three) {
+            System.out.println("Большее из чисел " + one);
+        }
+        else if (two>one && two>three) {
+            System.out.println("Большее из чисел " + two);
+        }
+        else {
+            System.out.println("Большее из чисел " + three);
+        }
     }
 }
 
