@@ -14,7 +14,8 @@ public class Main {
         int age = 15;
         if (age >= 18) {
             System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний.");
-        } else {
+        }
+        if (age < 18){
             System.out.println("Если возраст человека равен " + age + ", то он не достиг совершеннолетия, нужно немного подождать.");
         }
     }
@@ -65,7 +66,7 @@ public class Main {
         if (age < 5) {
             System.out.println("Если возраст ребнка равен " + age + ", то ему нельзя кататься на аттракционе.");
         }
-        else if (age >= 5 && age < 11) {
+        else if (age < 14) {
             System.out.println("Если возраст ребнка равен " + age + ", то ему можно кататься на аттракционе только в сопровождении взрослого.");
         }
         else {
@@ -77,33 +78,40 @@ public class Main {
     public static void task6 () {
         System.out.println("Задача 6");
         int trainCapacity = 102;
-        int numberOfSeats = 60;
-        int numberOfPeople = 130;
-        if (numberOfPeople <= 60) {
-            System.out.println("В вагоне еще осталось " + (numberOfSeats - numberOfPeople) + " сидячих мест, и " + (trainCapacity - numberOfSeats) + " стоячих мест.");
+        int numberOfSeats = 60; // количество сидячих мест
+
+        int seatsPeople = 20; // количество людей на сидячих местах
+        int standingPeople = 42; // количество стоящих людей
+
+        if (seatsPeople < 60) {
+            System.out.println("В вагоне еще осталось " + (numberOfSeats - seatsPeople) + " сидячих мест.");
+        } else {
+            System.out.println("Сидячих мест нет.");
         }
-        else if (numberOfPeople > 60 && numberOfPeople <= trainCapacity) {
-            System.out.println("В вагоне осталось " + (trainCapacity - numberOfSeats) + " стоячих мест.");
-        }
-        else {
-            System.out.println("Вагон забит, свободных мест нет.");
+        if (standingPeople < (trainCapacity - numberOfSeats)) {
+            System.out.println("В вагоне еще осталось " + (trainCapacity - numberOfSeats - standingPeople) + " стоячих мест.");
+        } else {
+            System.out.println("Стоячих мест нет.");
         }
 
     }
 
     public static void task7 () {
         System.out.println("Задача 7");
-        int one = 5;
-        int two = 9;
-        int three = 1;
-        if (one>two && one>three) {
-            System.out.println("Большее из чисел " + one);
+        int one = 10;
+        int two = 2;
+        int three = 10;
+
+        if (one>two && one>=three) {
+            System.out.println("Наибольшее число " + one);
         }
-        else if (two>one && two>three) {
-            System.out.println("Большее из чисел " + two);
+        else if (two>one && two>=three) {
+            System.out.println("Наибольшее число " + two);
         }
-        else {
-            System.out.println("Большее из чисел " + three);
+        else if (three>one && three>=two) {
+            System.out.println("Наибольшее число " + three);
+        } else {
+            System.out.println("Все числа равны.");
         }
     }
 }
